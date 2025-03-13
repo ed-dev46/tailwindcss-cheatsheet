@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+
+    <h1 class="text-8xl text-center my-7">Tailwind<span class="text-white bg-sky-400 rounded-3xl px-2">CSS</span></h1>
+
+    
+    <section class="lg:w-4xl mx-auto mb-7 w-2xl px-4">
+    <h2 class="text-7xl font-semibold">Font Size</h2>
+    <h3 class="text-3xl text-gray-600 ml-7">text-{font-size}</h3>
+        <table class="my-4 mx-auto">
+        <thead class="bg-amber-300 text-gray-600">
+            <th>Class</th>
+            <th>Sizes (in rem)</th>
+            <th>(in px)</th>
+        </thead>
+        <tbody>
+            <tr class="bg-emerald-200">
+                <td class="pl-2">text-xs</td>
+                <td>0.75rem</td>
+                <td>12px</td>
+            </tr>
+            <tr class="bg-emerald-300">
+                <td class="pl-2">text-sm</td>
+                <td>0.875rem</td>
+                <td>14px</td>
+            </tr>
+            <tr class="bg-sky-300">
+                <td class="pr-5 pl-2">text-base</td>
+                <td>1rem</td>
+                <td>16px</td>
+            </tr>
+            <tr class="bg-rose-200">
+                <td class="pl-2">text-lg</td>
+                <td>1.125rem</td>
+                <td>18px</td>
+            </tr>
+            <tr class="bg-rose-300">
+                <td class="pl-2">text-xl</td>
+                <td>1.25rem</td>
+                <td>20px</td>
+            </tr>
+            <tr class="bg-rose-400">
+                <td class="pl-2">text-2xl</td>
+                <td>1.5rem</td>
+                <td>24px</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="p-2 text-center bg-indigo-400 text-white font-semibold">To infinity and beyond...</td>
+            </tr>
+        </tbody>
+        </table>
+        <p class="text-2xl max-w-[80%] lg:max-w-full mx-auto mb-7">Não precisa decorar tudo. Apenas pense no tamanho do seu texto (small, base or large). O <b>x</b> diz apenas a intensidade.</b></p>
+        <a href="https://tailwindcss.com/docs/font-size" target="_blank" class="bg-sky-400 text-white font-semibold p-2 hover:bg-sky-300">Documentação</a>
+    </section>
+
+    <section class="lg:w-4xl mx-auto mb-7 w-2xl px-4">
+        <h2 class="text-7xl font-semibold">Colors</h2>
+
+        <table class="mx-auto">
+            <thead>
+                <th class="pr-3">Values</th>
+                <th class="pr-3">50</th>
+                <th class="pr-3">100</th>
+                <th class="pr-3">200</th>
+                <th class="pr-3">300</th>
+                <th class="pr-3">400</th>
+                <th class="pr-3">500</th>
+                <th class="pr-3">600</th>
+                <th class="pr-3">700</th>
+                <th class="pr-3">800</th>
+                <th class="pr-3">900</th>
+                <th>950</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="font-semibold pr-12">Red</td>
+                    <td class="bg-red-50"></td>
+                    <td class="bg-red-100"></td>
+                    <td class="bg-red-200"></td>
+                    <td class="bg-red-300"></td>
+                    <td class="bg-red-400"></td>
+                    <td class="bg-red-500"></td>
+                    <td class="bg-red-600"></td>
+                    <td class="bg-red-700"></td>
+                    <td class="bg-red-800"></td>
+                    <td class="bg-red-900"></td>
+                    <td class="bg-red-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Orange</td>
+                    <td class="bg-orange-50"></td>
+                    <td class="bg-orange-100"></td>
+                    <td class="bg-orange-200"></td>
+                    <td class="bg-orange-300"></td>
+                    <td class="bg-orange-400"></td>
+                    <td class="bg-orange-500"></td>
+                    <td class="bg-orange-600"></td>
+                    <td class="bg-orange-700"></td>
+                    <td class="bg-orange-800"></td>
+                    <td class="bg-orange-900"></td>
+                    <td class="bg-orange-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Amber</td>
+                    <td class="bg-amber-50"></td>
+                    <td class="bg-amber-100"></td>
+                    <td class="bg-amber-200"></td>
+                    <td class="bg-amber-300"></td>
+                    <td class="bg-amber-400"></td>
+                    <td class="bg-amber-500"></td>
+                    <td class="bg-amber-600"></td>
+                    <td class="bg-amber-700"></td>
+                    <td class="bg-amber-800"></td>
+                    <td class="bg-amber-900"></td>
+                    <td class="bg-amber-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Yellow</td>
+                    <td class="bg-yellow-50"></td>
+                    <td class="bg-yellow-100"></td>
+                    <td class="bg-yellow-200"></td>
+                    <td class="bg-yellow-300"></td>
+                    <td class="bg-yellow-400"></td>
+                    <td class="bg-yellow-500"></td>
+                    <td class="bg-yellow-600"></td>
+                    <td class="bg-yellow-700"></td>
+                    <td class="bg-yellow-800"></td>
+                    <td class="bg-yellow-900"></td>
+                    <td class="bg-yellow-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Lime</td>
+                    <td class="bg-lime-50"></td>
+                    <td class="bg-lime-100"></td>
+                    <td class="bg-lime-200"></td>
+                    <td class="bg-lime-300"></td>
+                    <td class="bg-lime-400"></td>
+                    <td class="bg-lime-500"></td>
+                    <td class="bg-lime-600"></td>
+                    <td class="bg-lime-700"></td>
+                    <td class="bg-lime-800"></td>
+                    <td class="bg-lime-900"></td>
+                    <td class="bg-lime-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Green</td>
+                    <td class="bg-green-50"></td>
+                    <td class="bg-green-100"></td>
+                    <td class="bg-green-200"></td>
+                    <td class="bg-green-300"></td>
+                    <td class="bg-green-400"></td>
+                    <td class="bg-green-500"></td>
+                    <td class="bg-green-600"></td>
+                    <td class="bg-green-700"></td>
+                    <td class="bg-green-800"></td>
+                    <td class="bg-green-900"></td>
+                    <td class="bg-green-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Emerald</td>
+                    <td class="bg-emerald-50"></td>
+                    <td class="bg-emerald-100"></td>
+                    <td class="bg-emerald-200"></td>
+                    <td class="bg-emerald-300"></td>
+                    <td class="bg-emerald-400"></td>
+                    <td class="bg-emerald-500"></td>
+                    <td class="bg-emerald-600"></td>
+                    <td class="bg-emerald-700"></td>
+                    <td class="bg-emerald-800"></td>
+                    <td class="bg-emerald-900"></td>
+                    <td class="bg-emerald-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Teal</td>
+                    <td class="bg-teal-50"></td>
+                    <td class="bg-teal-100"></td>
+                    <td class="bg-teal-200"></td>
+                    <td class="bg-teal-300"></td>
+                    <td class="bg-teal-400"></td>
+                    <td class="bg-teal-500"></td>
+                    <td class="bg-teal-600"></td>
+                    <td class="bg-teal-700"></td>
+                    <td class="bg-teal-800"></td>
+                    <td class="bg-teal-900"></td>
+                    <td class="bg-teal-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Cyan</td>
+                    <td class="bg-cyan-50"></td>
+                    <td class="bg-cyan-100"></td>
+                    <td class="bg-cyan-200"></td>
+                    <td class="bg-cyan-300"></td>
+                    <td class="bg-cyan-400"></td>
+                    <td class="bg-cyan-500"></td>
+                    <td class="bg-cyan-600"></td>
+                    <td class="bg-cyan-700"></td>
+                    <td class="bg-cyan-800"></td>
+                    <td class="bg-cyan-900"></td>
+                    <td class="bg-cyan-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Sky</td>
+                    <td class="bg-sky-50"></td>
+                    <td class="bg-sky-100"></td>
+                    <td class="bg-sky-200"></td>
+                    <td class="bg-sky-300"></td>
+                    <td class="bg-sky-400"></td>
+                    <td class="bg-sky-500"></td>
+                    <td class="bg-sky-600"></td>
+                    <td class="bg-sky-700"></td>
+                    <td class="bg-sky-800"></td>
+                    <td class="bg-sky-900"></td>
+                    <td class="bg-sky-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Blue</td>
+                    <td class="bg-blue-50"></td>
+                    <td class="bg-blue-100"></td>
+                    <td class="bg-blue-200"></td>
+                    <td class="bg-blue-300"></td>
+                    <td class="bg-blue-400"></td>
+                    <td class="bg-blue-500"></td>
+                    <td class="bg-blue-600"></td>
+                    <td class="bg-blue-700"></td>
+                    <td class="bg-blue-800"></td>
+                    <td class="bg-blue-900"></td>
+                    <td class="bg-blue-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Indigo</td>
+                    <td class="bg-indigo-50"></td>
+                    <td class="bg-indigo-100"></td>
+                    <td class="bg-indigo-200"></td>
+                    <td class="bg-indigo-300"></td>
+                    <td class="bg-indigo-400"></td>
+                    <td class="bg-indigo-500"></td>
+                    <td class="bg-indigo-600"></td>
+                    <td class="bg-indigo-700"></td>
+                    <td class="bg-indigo-800"></td>
+                    <td class="bg-indigo-900"></td>
+                    <td class="bg-indigo-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Violet</td>
+                    <td class="bg-violet-50"></td>
+                    <td class="bg-violet-100"></td>
+                    <td class="bg-violet-200"></td>
+                    <td class="bg-violet-300"></td>
+                    <td class="bg-violet-400"></td>
+                    <td class="bg-violet-500"></td>
+                    <td class="bg-violet-600"></td>
+                    <td class="bg-violet-700"></td>
+                    <td class="bg-violet-800"></td>
+                    <td class="bg-violet-900"></td>
+                    <td class="bg-violet-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Purple</td>
+                    <td class="bg-purple-50"></td>
+                    <td class="bg-purple-100"></td>
+                    <td class="bg-purple-200"></td>
+                    <td class="bg-purple-300"></td>
+                    <td class="bg-purple-400"></td>
+                    <td class="bg-purple-500"></td>
+                    <td class="bg-purple-600"></td>
+                    <td class="bg-purple-700"></td>
+                    <td class="bg-purple-800"></td>
+                    <td class="bg-purple-900"></td>
+                    <td class="bg-purple-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Fuchsia</td>
+                    <td class="bg-fuchsia-50"></td>
+                    <td class="bg-fuchsia-100"></td>
+                    <td class="bg-fuchsia-200"></td>
+                    <td class="bg-fuchsia-300"></td>
+                    <td class="bg-fuchsia-400"></td>
+                    <td class="bg-fuchsia-500"></td>
+                    <td class="bg-fuchsia-600"></td>
+                    <td class="bg-fuchsia-700"></td>
+                    <td class="bg-fuchsia-800"></td>
+                    <td class="bg-fuchsia-900"></td>
+                    <td class="bg-fuchsia-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Pink</td>
+                    <td class="bg-pink-50"></td>
+                    <td class="bg-pink-100"></td>
+                    <td class="bg-pink-200"></td>
+                    <td class="bg-pink-300"></td>
+                    <td class="bg-pink-400"></td>
+                    <td class="bg-pink-500"></td>
+                    <td class="bg-pink-600"></td>
+                    <td class="bg-pink-700"></td>
+                    <td class="bg-pink-800"></td>
+                    <td class="bg-pink-900"></td>
+                    <td class="bg-pink-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Rose</td>
+                    <td class="bg-rose-50"></td>
+                    <td class="bg-rose-100"></td>
+                    <td class="bg-rose-200"></td>
+                    <td class="bg-rose-300"></td>
+                    <td class="bg-rose-400"></td>
+                    <td class="bg-rose-500"></td>
+                    <td class="bg-rose-600"></td>
+                    <td class="bg-rose-700"></td>
+                    <td class="bg-rose-800"></td>
+                    <td class="bg-rose-900"></td>
+                    <td class="bg-rose-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Slate</td>
+                    <td class="bg-slate-50"></td>
+                    <td class="bg-slate-100"></td>
+                    <td class="bg-slate-200"></td>
+                    <td class="bg-slate-300"></td>
+                    <td class="bg-slate-400"></td>
+                    <td class="bg-slate-500"></td>
+                    <td class="bg-slate-600"></td>
+                    <td class="bg-slate-700"></td>
+                    <td class="bg-slate-800"></td>
+                    <td class="bg-slate-900"></td>
+                    <td class="bg-slate-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Gray</td>
+                    <td class="bg-gray-50"></td>
+                    <td class="bg-gray-100"></td>
+                    <td class="bg-gray-200"></td>
+                    <td class="bg-gray-300"></td>
+                    <td class="bg-gray-400"></td>
+                    <td class="bg-gray-500"></td>
+                    <td class="bg-gray-600"></td>
+                    <td class="bg-gray-700"></td>
+                    <td class="bg-gray-800"></td>
+                    <td class="bg-gray-900"></td>
+                    <td class="bg-gray-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Zinc</td>
+                    <td class="bg-zinc-50"></td>
+                    <td class="bg-zinc-100"></td>
+                    <td class="bg-zinc-200"></td>
+                    <td class="bg-zinc-300"></td>
+                    <td class="bg-zinc-400"></td>
+                    <td class="bg-zinc-500"></td>
+                    <td class="bg-zinc-600"></td>
+                    <td class="bg-zinc-700"></td>
+                    <td class="bg-zinc-800"></td>
+                    <td class="bg-zinc-900"></td>
+                    <td class="bg-zinc-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Neutral</td>
+                    <td class="bg-neutral-50"></td>
+                    <td class="bg-neutral-100"></td>
+                    <td class="bg-neutral-200"></td>
+                    <td class="bg-neutral-300"></td>
+                    <td class="bg-neutral-400"></td>
+                    <td class="bg-neutral-500"></td>
+                    <td class="bg-neutral-600"></td>
+                    <td class="bg-neutral-700"></td>
+                    <td class="bg-neutral-800"></td>
+                    <td class="bg-neutral-900"></td>
+                    <td class="bg-neutral-950"></td>
+                </tr>
+                <tr>
+                    <td class="font-semibold">Stone</td>
+                    <td class="bg-stone-50"></td>
+                    <td class="bg-stone-100"></td>
+                    <td class="bg-stone-200"></td>
+                    <td class="bg-stone-300"></td>
+                    <td class="bg-stone-400"></td>
+                    <td class="bg-stone-500"></td>
+                    <td class="bg-stone-600"></td>
+                    <td class="bg-stone-700"></td>
+                    <td class="bg-stone-800"></td>
+                    <td class="bg-stone-900"></td>
+                    <td class="bg-stone-950"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="text-4xl ml-4 mt-6">Background</h3>
+        <h3 class="text-3xl text-gray-600 ml-8">bg-{color}-{value}</h3>
+        <h3 class="text-4xl ml-4 mt-6">Text</h3>
+        <h3 class="text-3xl text-gray-600 ml-7 mb-7">text-{color}-{value}</h3>
+        <a href="https://tailwindcss.com/docs/colors" target="_blank" class="bg-sky-400 text-white font-semibold p-2 hover:bg-sky-300">Documentação</a>
+    </section>
+    
+    <section class="lg:w-4xl mx-auto mb-7 w-2xl px-4">
+        <h2 class="text-7xl font-semibold">Margin & Padding</h2>
+        <p class="text-gray-600 text-3xl ml-8 mb-4">m-{value} <span class="text-black font-bold">or</span> p-{value}</p>
+
+        <p class="text-2xl mb-7 max-w-[80%] lg:max-w-full mx-auto">A seguir da anotação do espaçamento (m ou p), você também pode adicionar mais uma para indicar a direção que o espaçamento irá ser aplicado.</p>
+
+        <table class="mx-auto mb-7">
+                <thead class="bg-amber-300">
+                    <th>Class</th>
+                    <th>Direction</th>
+                </thead>
+                <tbody class="bg-amber-100">
+                    <tr>
+                        <td class="px-3">x-{value}</td>
+                        <td class="px-3">X Axys</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3">y-{value}</td>
+                        <td class="px-3">Y Axys</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3">t-{value}</td>
+                        <td class="px-3">Top</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3">b-{value}</td>
+                        <td class="px-3">Bottom</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3">l-{value}</td>
+                        <td class="px-3">Left</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3">r-{value}</td>
+                        <td class="px-3">Right</td>
+                    </tr>
+                </tbody>
+        </table>
+        <a href="https://tailwindcss.com/docs/margin" target="_blank" class="bg-sky-400 text-white font-semibold p-2 hover:bg-sky-300">Documentação</a>
+
+    </section>
+
+    <section class="lg:w-4xl mx-auto mb-7 w-2xl px-4">
+        <h2 class="text-7xl font-semibold">Font Weight</h2>
+        <p class="text-3xl text-gray-600 ml-7">font-{value}</p>
+        <ul class="mb-7">
+            <li class="pt-4 text-emerald-200 font-thin text-6xl text-center">thin</li>
+            <li class="text-emerald-300 font-extralight text-6xl text-center">extralight</li>
+            <li class="text-emerald-400 font-light text-6xl text-center">light</li>
+            <li class="text-emerald-500 font-normal text-6xl text-center">normal</li>
+            <li class="text-emerald-600 font-medium text-6xl text-center">medium</li>
+            <li class="text-emerald-700 font-semibold text-6xl text-center">semibold</li>
+            <li class="text-emerald-800 font-bold text-6xl text-center">bold</li>
+            <li class="text-emerald-900 font-extrabold text-6xl text-center">extrabold</li>
+            <li class="pb-4 text-emerald-950 font-black text-6xl text-center">black</li>
+        </ul>
+        <a href="https://tailwindcss.com/docs/font-weight" target="_blank" class="bg-sky-400 text-white font-semibold p-2 hover:bg-sky-300">Documentação</a>
+    </section>
+    <section class="lg:w-4xl mx-auto mb-7 w-2xl px-4">
+        <h2 class="text-7xl font-semibold">Responsivity</h2>
+        <p class="text-3xl text-gray-600 ml-7 mb-4">{value}:{property}</p>
+        <p class="text-2xl mb-7 max-w-[80%] lg:max-w-full mx-auto">Inserindo uma classe de <b>responsivity</b> antes de uma classe, significa que: quando a tela for <b>igual a esse valor ou acima</b>, as propriedades a seguir serão aplicadas.</p>
+        <ul class="mb-7">
+            <li class="text-6xl pt-4 text-center"><b>sm:</b> small</li>
+            <li class="text-6xl text-center"><b>md:</b> medium</li>
+            <li class="text-6xl text-center"><b>lg:</b> large</li>
+            <li class="text-6xl text-center"><b>xl:</b> extra-large</li>
+            <li class="text-6xl text-center"><b>2xl:</b> 2extra-large</li>
+            <li class="text-6xl p-4 text-center">To infinity and beyond...</li>
+        </ul>
+        <a href="https://tailwindcss.com/docs/responsive-design" target="_blank" class="bg-sky-400 text-white font-semibold p-2 hover:bg-sky-300">Documentação</a>
+    </section>
+</body>
+</html>
